@@ -7,7 +7,8 @@ def insertionSort(array) -> List[int]:
     for j in range(i+1,0,-1):
       if array[min_index]>array[j]:
         array[min_index], array[j] = array[j], array[min_index] 
-        min_index = j-1
+        min_index = j - 1
+  return array
 
 # data = [9, 5, 1, 4, 3]
 input_data = input()

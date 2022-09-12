@@ -2,12 +2,13 @@ from typing import List
 
 def insertionSort(array) -> List[int]:
   # Write your code here
-  for i in range(len(array)-1):
-    min = array[i]
-    for j in range(i-1,-1,-1):
-        if min<array[j]:
-          array[j + 1] = array[j]
-    array[j + 1] = min
+  for i in range(1, len(array)):
+        min = array[i]
+        j = i-1
+        while j >= 0 and min < array[j] :
+                array[j + 1] = array[j]
+                j -= 1
+        array[j + 1] = min
   return array
 
 # data = [9, 5, 1, 4, 3]

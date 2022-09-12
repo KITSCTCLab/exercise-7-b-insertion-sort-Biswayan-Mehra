@@ -8,6 +8,8 @@ def insertionSort(array) -> List[int]:
       if array[min_index]>array[j]:
         array[min_index], array[j] = array[j], array[min_index] 
         min_index = j - 1
+      else:
+        break
   return array
 
 # data = [9, 5, 1, 4, 3]
